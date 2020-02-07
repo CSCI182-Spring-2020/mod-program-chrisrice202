@@ -25,17 +25,15 @@ struct Employee {
 int main()
 {
 
-    Employee myEmployee{
+    Employee myEmployee;
 
-        myEmployee.Name = "Chris",
-        myEmployee.DivisionNo = 123,
-        myEmployee.address.City = "Myrtle Beach",
-        myEmployee.address.State = "SC",
-        myEmployee.empType = EMPLOYEE
+    myEmployee.Name = "Chris";
+    myEmployee.DivisionNo = 123;
+    myEmployee.address.City = "Myrtle Beach";
+    myEmployee.address.State = "SC";
+    myEmployee.empType = EMPLOYEE;
 
-    };
-
-    cout << myEmployee.empType << ": " << myEmployee.Name << " " << myEmployee.DivisionNo << " " << myEmployee.address.City << ", " << myEmployee.address.State;
+    std::cout << myEmployee.empType << ": " << myEmployee.Name << " " << myEmployee.DivisionNo << " " << myEmployee.address.City << ", " << myEmployee.address.State;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
